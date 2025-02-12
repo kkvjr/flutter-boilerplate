@@ -11,16 +11,16 @@ class HomeWidget extends StatelessWidget {
     final counter = Provider.of<CounterProvider>(context);
 
     return Scaffold(
-      appBar: AppBar(title: const Text("Contador")),
+      appBar: AppBar(title:  Text("Contador",style: Theme.of(context).textTheme.titleLarge)),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Text("Contador: ${counter.count}", style: const TextStyle(fontSize: 24)),
+            Text("Contador: ${counter.count}", style: Theme.of(context).textTheme.headlineLarge),
             const SizedBox(height: 20),
             ElevatedButton(
               onPressed: counter.increment,
-              child: const Text("Incrementar"),
+              child:  Text("Incrementar",style: Theme.of(context).textTheme.bodyLarge),
             ),
           ],
         ),
