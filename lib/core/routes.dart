@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_boilerplate/domains/home/home_widget.dart';
 import 'package:go_router/go_router.dart';
 
-final GoRouter _router = GoRouter(
+import '../presentation/views/home_widget.dart';
+
+final GoRouter router = GoRouter(
   routes: <RouteBase>[
     GoRoute(
       path: '/',
